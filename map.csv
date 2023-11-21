@@ -1,7 +1,12 @@
-,1,2,3,4,5
-1,,,START,,
-2,,CORRIDOR22,CORRIDOR32,CORRIDOR42,
-3,LUNCHROOM13,CORRIDOR23,CONTROLS34,CORRIDOR43,LAB54
-4,ENGINES14,CORRIDOR24,MEDBAY35,CORRIDOR44,ENGINES54
-5,,CORRIDOR25,,CORRIDOR45,
-6,,PLANT26,,WATERGEN46,
+Room name,Description,Events,Exits
+START,"You wake up, sitting straight up. You had a bad dream. As you look around, you realize everything is fine. The other crew members are still sleeping. You try to fall back asleep, but soon realize that you just won't be able to. You stand up, leaving your room and entering the main hallway. You decide to get a snack, check on the engines and course, and go back to sleep. How hard could it be?",,SOUTH:CORRIDOR32
+CORRIDOR22,You continue west in the corridor. This is just a odd branch off and the corridor continues east and south.,,"EAST:CORRIDOR32,SOUTH:CORRIDOR23"
+CORRIDOR32,"You step out into the corridor, continuing east and west. The bedroom is back to the north.",,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+CORRIDOR42,,,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+CORRIDOR23,,,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+CORRIDOR43,,,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+CORRIDOR24,,,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+CORRIDOR44,,,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+CORRIDOR25,,,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+CORRIDOR45,,,"NORTH:BEDROOM,WEST:CORRIDOR22,EAST:CORRIDOR42"
+BEDROOM,You enter back into the bedroom.,HAVE_GOT_ALL:WIN,SOUTH:CORRIDOR32
